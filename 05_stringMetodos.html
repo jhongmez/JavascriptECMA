@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String, Cadenas y Métodos</h1>
+    <script>
+        let texto = "Estoy aprendiendo"
+        let lenguaje = "javascript";
+        let mensaje = "Estamos aprendiendo javascript moderno ¿lo sabías?";
+
+        //El nuevo uso de crear espacios entre dos variables
+        console.log(`${texto} ${lenguaje}`);
+        
+        // De esta manera podemos concatenar
+        console.log(`${texto} ${lenguaje.concat(" y es algo difícil.")}`);
+
+        //El indexOf nos ayuda a ubicar en que posición se encuentra el valor ingresado
+        console.log(lenguaje.indexOf('javascript'));
+
+        //Con el substring lo que hacemos es que nos traiga un rango de letras 
+        console.log(mensaje.substring(0, 10));
+
+        //con split podemos decir que queremos que nos omita en el valor
+        console.log(mensaje.split('¿','?'));
+
+        //Como su nombre lo dice este reemplaza el valor que le pongamos
+        console.log(mensaje.replace('javascript','angular'));
+
+        //Este nos puede devolver un true o un false como un booleano
+        console.log(mensaje.includes('javascript'));
+
+        //Este nos repite las veces que necesitemos
+        console.log(lenguaje.repeat(10));
+
+    </script>
+</body>
+</html>
