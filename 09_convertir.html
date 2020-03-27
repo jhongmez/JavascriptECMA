@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convertir string a numero</h1>
+    <hr>
+    <script>
+        const   num1 = "50",
+                num2 = 10,
+                num3 = 'tres';
+        
+        let dato;
+
+        dato = Number("20");
+        dato = Number('20.1578');
+        dato = Number(true);
+        dato = Number(false);
+        dato = Number(null);
+        dato = Number(undefined);
+        dato = Number([1,2,3]);
+
+        // parseFloat y parseInt
+        dato = parseInt('100');
+        dato = parseFloat('100.2030');
+        dato = parseInt('100.2030');
+
+        //tofixed
+        dato = 12457898.4578465;
+        
+        //para convertir un string a numero lo hacemos con Number o parseInt
+        console.log( Number(num1) + num2);
+        console.log( parseInt(num1) + num2);
+
+        console.log(dato.toFixed(3));
+
+    </script>
+</body>
+</html>
