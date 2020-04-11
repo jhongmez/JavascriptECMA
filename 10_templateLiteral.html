@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    
+    <script>
+        const inmueble = "Apartamentos";
+        const negocio = "Arriendamiento"
+        const precio = "1500000";
+        const admin = "200000";
+
+        let html;
+
+        html = `
+            <h1>Arriendos Jhon</h1>
+            <ul>
+                <li>Tipo de inmueble: ${inmueble}</li>
+                <li>Tipo de negocio: ${negocio}</li>
+                <li>Precio: ${precio}</li>
+                <li>Administración: ${admin}</li>
+                <li>Total: ${total(precio, admin)}</li>
+            </ul>
+        `;
+        
+        //Funcion para hacer el total del precio
+        function total(precio, admin) {
+            return (Number(precio) + Number(admin));
+        }
+        
+        document.getElementById("app").innerHTML = html;
+
+    </script>
+</body>
+</html>   
