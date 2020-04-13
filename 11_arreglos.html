@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arreglos</h1>
+    <script>
+
+        const meses = new Array('Enero', 'Febrero', 'Marzo');
+
+        //agregar otro valor al arreglo al final
+        meses.push('Abril', 'Mayo');
+
+        //agregar al inicio del arreglo
+        meses.unshift('Diciembre');
+
+        //eliminar una propiedad el arreglo
+        meses.pop();
+
+        //eliminar una propiedad el arreglo EL PRIMERO
+        meses.shift();
+
+        //Quitar alguna propiedad y posicion
+        meses.splice(2, 1);
+
+        //colocar en reversa las propiedades
+        meses.reverse();
+
+        //Unir arreglos
+        let arreglo1 = [1,2,3,100,80,22,35],
+            arreglo2 = [10,20,30];
+        
+        console.log(arreglo1.concat(arreglo2));
+
+        //Ordenar alfabeticamente sirve en string y number
+        meses.sort();
+
+        //Ordenar numero de manera correcta
+        arreglo1.sort(function(x, y) {
+            return x - y;
+        });
+
+        console.log(arreglo1);
+
+        //tamaño del arreglo
+        console.log(meses.length);
+
+        //verificar si es un arreglo
+        console.log(Array.isArray(meses));
+
+        //extraer alguna posicion del arreglo
+        console.log(meses[2]);
+
+        console.log(meses);
+
+    </script>
+</body>
+</html>
