@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1>Objetos</h1>
+    <script>
+        //Creando un objeto
+        const persona = {
+            nombre: "Jhon",
+            apellido: "Gomez",
+            edad: 23,
+            profesion: "Desarrollador web",
+            email: "jhon@gmail.com",
+            musica: ['trance', 'salsa', 'bachata'],
+            hogar: {
+                pais: "Colombia",
+                departamento: "Caldas",
+                municipio: "Manizales"
+            },
+            nacimiento: function() {
+                // Para traernos la edad que tenemos en el objeto persona
+                // es con this
+                return new Date().getFullYear() - this.edad;
+            }
+        }
+
+        const persona2 = {
+            nombre: "Jhon",
+            apellido: "Gomez",
+            edad: 30,
+            profesion: "Desarrollador web",
+            email: "jhon@gmail.com",
+            musica: ['trance', 'salsa', 'bachata'],
+            hogar: {
+                pais: "Colombia",
+                departamento: "Caldas",
+                municipio: "Manizales"
+            },
+            nacimiento: function() {
+                // Para traernos la edad que tenemos en el objeto persona
+                // es con this
+                return new Date().getFullYear() - this.edad;
+            }
+        }
+
+        console.log(persona);
+
+        //para acceder a una propiedad del objeto 
+        console.log(persona.profesion);
+
+        //Añadiendo tipo de musica
+        persona.musica.push('Reggaeton');
+
+        //Acceder a un arreglo dentro de un objeto
+        console.log(persona.musica[3]);
+
+
+        console.log(persona.hogar.pais);
+
+        //Accediendo a una funcion dentro de un obejto
+        console.log(persona2.nacimiento());
+    </script>
+</body>
+</html>
